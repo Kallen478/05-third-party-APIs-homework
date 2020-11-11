@@ -1,0 +1,37 @@
+body {
+    background-color: darkgray;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.saveButton {
+    border-left: 1px solid black;
+}
+    
+
+textarea {
+    background-color: transparent;
+    border-left: 1px solid black;
+}
+
+.past {
+    background-color: salmon;
+}
+
+.present {
+    background-color: lightgreen;
+}
+
+.future {
+    background-color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
