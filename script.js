@@ -22,6 +22,23 @@ $(document).ready(function () {
         localStorage.setItem(saveItem, itemValue);
     });
 
-   
+    // checks time blocks vs current time and color codes accordingly
+    function colorCode() {
+        var currentTime = moment().hours();
+
+        $(".time-block").each(function () {
+            var timeBlock = parseInt($(this).attr("id").split("-")[0]);
+
+            if (timeBlock === currentTime) {
+                $(this).addClass("present");
+            }
+            else if (timeBlock < currentTime) {
+                $(this).addClass("past");
+            }
+            else {
+                $(this).addClass("future");
+            }
+        });
+    } colorCode();
 
 });
